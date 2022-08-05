@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/agregar-header.css">
+    <link rel="stylesheet" href="./css/agregar-main.css">
+    <link rel="stylesheet" href="./css/agregar-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <header>
+        <div class="logo-contenedor">
+            <img src="./imagenes/logo.png" alt="logo" class="logo">
+        </div>
+        <div>
+            Menú Nuevo Producto
+        </div>
+    </header>
+    <main>
+        <div class="agregar-producto-contenedor">
+            <div class="agregar-producto">
+                <h3>Agregar Nuevo Producto</h3>
+            </div>
+            <form class="form" id="form">
+                <input type="text" placeholder="url de la imagen" required>
+                <input type="text" placeholder="categoría" required>
+                <input type="text" placeholder="nombre" required>
+                <input type="number" placeholder="precio $" required>
+                <input type="text" placeholder="descripción del producto" id="info" required>
+                <input type="submit" class="agregar" value="Agregar" id="agregar">
+            </form>
+            <div class="invisible" id="agregado">
+                Producto Agregado!
+            </div>
+        </div>
+    </main>
+    <script>
+        var a = document.getElementById("agregado");
+        const form  = document.getElementById('form');
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    a.classList.remove('invisible');
+                });
+    </script>
+    <footer>
+        <div>
+            ¿La página no funciona bien? 
+        </div>
+        <div class="ayuda">
+            <a href="#">Ayuda</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

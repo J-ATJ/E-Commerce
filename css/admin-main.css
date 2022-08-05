@@ -1,0 +1,19 @@
+main{
+   padding: 3%; 
+}
+main h2{
+    margin: 15px 0;
+}
+.agregar-producto{
+    padding: 6px 18px;
+    color: whitesmoke ;
+    border: 1px solid #2A7AE4;
+    background-color: #2A7AE4;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}.agregar-producto:hover{
+    background-color: #2A7AE490;
+}
+

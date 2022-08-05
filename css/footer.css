@@ -1,0 +1,131 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #b4c0e3;
+    color: black;
+    min-height: 100px;
+    padding: 6px;
+    text-align: center;
+}
+.div-footer-1, .div-footer-2{
+    margin: 15px 0;
+}
+.logo-footer{
+    width: 55%;
+    max-width: 210px;
+    margin: 0 0 15px 0;
+}
+footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    line-height: 1.6rem;
+}footer ul li a:hover{
+    color: #2A7AE4;
+}
+
+footer h1{
+    color: #464646;
+    margin: 0 0 10px 0;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+footer form input{
+    height: 20px;
+    width: 70%;
+    max-width: 270px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #d6e0f6;
+    outline: none;
+}
+footer form textarea{
+    padding: 10px 5px;
+    width: 70%;
+    max-width: 270px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #d6e0f6;
+    outline: none;
+    resize: none;
+}
+.enviar{
+    width: 80px;
+    height: 30px;
+    padding: auto auto;
+    border-radius: 5px;
+    border: 1px solid #2A7AE4;
+    color: #323232;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px auto;
+}.enviar:hover{
+    background-color: #2A7AE4;
+    color: whitesmoke;
+}
+
+.volver-arriba{
+    background-color: #b4c0e3;
+    color: #2A7AE4;
+    text-align: center;
+    padding: 15px 0 10px 0;
+}
+.desarrollador{
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+}
+.desarrollador div a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 1044px){
+    footer{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo-footer{
+        max-width: 280px;
+    }
+    footer ul li a{
+        line-height: 3rem;
+    }
+    footer h1{
+        font-size: 2.8rem;
+        margin-bottom: 50px;
+    }
+    
+    footer form input{
+        height: 40px;
+        max-width: 390px;
+    }
+    footer form textarea{
+        max-width: 390px;
+    }
+    .enviar{
+        width: 100px;
+        height: 35px;
+    }
+    .div-footer-1, .div-footer-2{
+        width: 50%;
+
+    }
+    .desarrollador{
+        font-size: 1.4rem;
+    }
+    .desarrollador div a:hover{
+        color: #2A7AE4;
+        text-decoration: none;
+    }
+
+}

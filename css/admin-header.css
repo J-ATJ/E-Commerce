@@ -1,0 +1,20 @@
+header{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo{
+    height: 40px;
+}
+
+@media screen and (min-width: 1044px){
+    header{
+        font-size: 1.2rem;
+    }
+    .logo{
+        height: 55px;
+    }
+}

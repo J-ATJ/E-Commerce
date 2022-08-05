@@ -1,0 +1,92 @@
+.starwars{
+    margin: 35px 0;
+    padding-bottom: 10px;
+}
+.consolas{
+    margin: 35px 0;
+    padding-bottom: 10px;
+}
+.diversos{
+    margin: 35px 0;
+    padding-bottom: 10px;
+}
+.encabezados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+.encabezados a{
+    color: #2A7AE4;
+    text-decoration: none;
+    font-weight: 400;
+}.encabezados a:hover{
+    color: #1559b1;
+}
+.material-symbols-outlined{
+    font-size: 10px;
+}
+.productos-contenedor-bloc{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.producto-contenedor{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    margin-bottom: 15px;
+}
+.producto-contenedor ul{
+    list-style-type:none;
+    line-height: 1.3rem;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+.producto-img{
+    width: 100%;
+    max-width: 210px;
+    border-radius: 6%;
+    cursor: pointer;
+}
+.precio{
+    font-weight: 500;
+}
+.ver-mas{
+    color: #2A7AE4;
+    cursor: pointer;
+}.ver-mas:hover{
+    color: #1559b1;
+}
+
+.oculto{
+    display: none;
+}
+
+
+
+.tools{
+    width: 100%;
+    position: absolute;
+    text-align: right;
+}
+.admin-tools{
+    margin: 4% 6%;
+    cursor: pointer;
+}
+.edit-tool{
+    width: 18px;
+}
+.delete-tool{
+    width: 16px;
+}
+
+@media screen and (min-width: 1044px){
+    .oculto{
+        display: flex;
+    }
+}

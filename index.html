@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/listas.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>E-Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo-contenedor">
+            <img src="./imagenes/logo.png" alt="logo" class="logo">
+        </div>
+        <div>
+            <a href="./login.html" class="login-contenedor">Login</a>
+        </div>
+        <div class="search-contenedor">
+            <form class="search-form-1">
+                <input type="search" class="producto-search" name="q" placeholder="Buscar producto">
+            </form>
+            <button class="search-btn" onclick="mostrarSearch()">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button> 
+        </div>
+    </header>
+    <form class="producto-search-2 invisible" id="producto-search-2-id">
+        <input type="search" class="producto-search-2" name="q" placeholder="Buscar producto">
+    </form>
+    <script>
+        var s = document.getElementById("producto-search-2-id");
+        var c = 0;
+        function mostrarSearch(){
+            if(c == 0){
+                s.classList.remove('invisible');
+                c = 1;
+            } else{
+                s.classList.add('invisible');
+                c = 0;
+            }
+        };
+    </script>
+    <main>
+        <div class="banner-contenedor">
+            <div class="ofertas-contenedor">
+                <h1>Oferta: -70%</h1>
+                <h4>en cualquier producto de la categoría: Diversos</h4>
+                <h4><a href="#">Ir a oferta</a></h4>
+            </div>
+        </div>
+        
+        <div class="listas-contenedor">
+            <div class="starwars">
+                <div class="encabezados">
+                    <h3>Star Wars</h3>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="productos-contenedor-bloc">
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/sw1.png" alt="sw1" class="producto-img">
+                        <ul>
+                            <li>Producto 1</li>
+                            <li class="precio">$330.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/sw2.png" alt="sw2" class="producto-img">
+                        <ul>
+                            <li>Producto 2</li>
+                            <li class="precio">$420.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/sw3.png" alt="sw3" class="producto-img">
+                        <ul>
+                            <li>Producto 3</li>
+                            <li class="precio">$230.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/sw4.png" alt="sw4" class="producto-img">
+                        <ul>
+                            <li>Producto 4</li>
+                            <li class="precio">$490.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor oculto">
+                        <img src="./imagenes/sw5.png" alt="sw5" class="producto-img">
+                        <ul>
+                            <li>Producto 5</li>
+                            <li class="precio">$500.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor oculto">
+                        <img src="./imagenes/sw6.png" alt="sw6" class="producto-img">
+                        <ul>
+                            <li>Producto 6</li>
+                            <li class="precio">$710.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="consolas">
+                <div class="encabezados">
+                    <h3>Consolas</h3>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="productos-contenedor-bloc">
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/c1.png" alt="c1" class="producto-img">
+                        <ul>
+                            <li>Producto 1</li>
+                            <li class="precio">$670.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/c2.png" alt="c2" class="producto-img">
+                        <ul>
+                            <li>Producto 2</li>
+                            <li class="precio">$550.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/c3.png" alt="c3" class="producto-img">
+                        <ul>
+                            <li>Producto 3</li>
+                            <li class="precio">300.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/c4.png" alt="c4" class="producto-img">
+                        <ul>
+                            <li>Producto 4</li>
+                            <li class="precio">$510.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+
+                    <div class="producto-contenedor oculto">
+                        <img src="./imagenes/c5.png" alt="c5" class="producto-img">
+                        <ul>
+                            <li>Producto 5</li>
+                            <li class="precio">$600.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor oculto">
+                        <img src="./imagenes/c6.png" alt="c6" class="producto-img">
+                        <ul>
+                            <li>Producto 6</li>
+                            <li class="precio">$330.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="diversos">
+                <div class="encabezados">
+                    <h3>Diversos</h3>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="productos-contenedor-bloc">
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/d1.png" alt="d1" class="producto-img">
+                        <ul>
+                            <li>Producto 1</li>
+                            <li class="precio">$200.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/d2.png" alt="d2" class="producto-img">
+                        <ul>
+                            <li>Producto 2</li>
+                            <li class="precio">$190.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/d3.png" alt="d3" class="producto-img">
+                        <ul>
+                            <li>Producto 3</li>
+                            <li class="precio">$170.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor">
+                        <img src="./imagenes/d4.png" alt="d4" class="producto-img">
+                        <ul>
+                            <li>Producto 4</li>
+                            <li class="precio">$400.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+
+                    <div class="producto-contenedor oculto">
+                        <img src="./imagenes/d5.png" alt="d5" class="producto-img">
+                        <ul>
+                            <li>Producto 5</li>
+                            <li class="precio">$490.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+                    <div class="producto-contenedor oculto">
+                        <img src="./imagenes/d6.png" alt="d6" class="producto-img">
+                        <ul>
+                            <li>Producto 6</li>
+                            <li class="precio">$690.00</li>
+                            <li class="ver-mas">ver más</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="div-footer-1">
+            <img src="./imagenes/logo.png" alt="logo-2" class="logo-footer">
+            <ul>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Programa de fidelidad</a></li>
+                <li><a href="#">Nuestras tiendas</a></li>
+                <li><a href="#">Quiero ser franquiciado</a></li>
+                <li><a href="#">Anúnciate aquí</a></li>
+            </ul>            
+        </div>
+        <div class="div-footer-2">
+            <h1>Contacto</h1>
+            <form>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <textarea cols="30" rows="3" placeholder="Deja un mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </div>
+        
+    </footer>
+    <div class="desarrollador">
+        <div>Desarrollado por: <a href="https://github.com/J-ATJ" target="_blank">J-ATJ</a></div>
+    </div>
+</body>
+</html>

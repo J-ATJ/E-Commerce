@@ -1,0 +1,75 @@
+header{
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+.logo{
+    height: 40px;
+}
+.login-contenedor{
+    border: 2px solid #2A7AE4;
+    padding: 6px 20px;
+    color: #2A7AE4;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto auto;
+    cursor: pointer;
+    text-decoration: none;
+}.login-contenedor:hover{
+    background-color: #2a7be4bf;
+    color: #d6e0f6;
+}
+.search-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-search{
+    display: none;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+.search-btn{
+    background: transparent;
+    border: none;
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    color: #2A7AE4;
+}
+.producto-search-2{
+    width: 100%;
+    height: 35px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+    padding-left: 3%;
+}
+.invisible{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .logo{
+        height: 60px;
+    }
+    .login-contenedor{
+        padding: 10px 40px;
+    }
+    .producto-search{
+        display: block;
+    }
+    .search-btn{
+        display: none;
+    }
+}

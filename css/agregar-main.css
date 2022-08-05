@@ -1,0 +1,72 @@
+main{
+    padding: 100px 0;
+}
+.agregar-producto-contenedor{
+    border: 1px solid #2A7AE4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0f2b50;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.agregar-producto{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: #7685981d;
+}
+#agregar{
+    color: whitesmoke;
+    background-color: #2A7AE495;
+    width: 25%;
+    margin: 15px auto 0 auto;
+    cursor: pointer;
+}#agregar:hover{
+    background-color: #2A7AE4;
+}
+.invisible{
+    display: none;
+}
+#agregado{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .agregar-producto-contenedor{
+        padding: 60px 45px;
+    }
+}
+
+@media screen and (min-width: 1044px){
+    main{
+        font-size: 1.2rem;
+    }
+    .agregar-producto{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .form input{
+        height: 25px;
+        margin-bottom: 15px;
+    }
+    #agregar{
+        height: 30px !important;
+        width: 20%;
+    }
+    
+}
