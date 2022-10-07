@@ -23,6 +23,5 @@ https://j-atj.github.io/E-Commerce/
 </a>
 
 <br/><br/>
-![E-Commerce](https://user-images.githubusercontent.com/98430219/194457262-64d276c4-3e59-42a7-b52a-d67a317e37a8.PNG)
-
+![E-Commerce-3](https://user-images.githubusercontent.com/98430219/194459099-92b80c13-9866-43be-9bee-0de83d8aa49b.png)
 
